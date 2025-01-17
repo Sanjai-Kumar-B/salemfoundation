@@ -578,6 +578,14 @@ body{
 .carousel-control.next {
   right: 10px;
 }
+.carousel-inner img {
+  width: 100%; /* Set to 100% to make it responsive */
+  max-width: 600px; /* Optional: Limit the maximum width */
+  height: auto; /* Maintain the aspect ratio */
+  margin: 0 auto; /* Center the image horizontally */
+  display: block; /* Ensure proper alignment */
+}
+
 /***Contact Form***/
 
 .contact {
@@ -862,6 +870,8 @@ textarea.input {
   opacity: 0.2;
 }
 
+
+
 @media (max-width: 850px) {
   .form {
     grid-template-columns: 1fr;
@@ -982,8 +992,8 @@ textarea.input {
   .call-float {
       width: 50px;
       height: 50px;
-      bottom: 160px; /* Adjust for smaller screens */
-      right: 60px;
+      bottom: 150px; /* Adjust for smaller screens */
+      right: 70px;
   }
 
   .call-float img {
@@ -1026,8 +1036,8 @@ textarea.input {
   .whatsapp-float {
       width: 50px;
       height: 50px;
-      bottom: 100px;
-      right: 60px;
+      bottom: 250px;
+      right: 70px;
   }
 
   .whatsapp-float img {
@@ -1237,4 +1247,81 @@ textarea.input {
     }
 }
 
+/* privacy policy*/
 
+.policy-section {
+  padding: 20px; /* Add padding around the content */
+  border: 1px solid #ddd; /* Optional: Add a light border */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 10px; /* Rounded corners */
+  max-width: 800px; /* Limit the width */
+  margin: 20px auto; /* Center the section */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+/* Styling for the heading */
+.policy-section h1 {
+  text-align: center; /* Center align the heading */
+  font-size: 2rem; /* Adjust font size */
+  color: #333; /* Darker text color */
+  margin-bottom: 20px; /* Add space below the heading */
+  position: relative; /* Needed for the decorative line */
+}
+
+/* Add a decorative line below the heading */
+.policy-section h1::after {
+  content: ""; /* Empty content for the line */
+  display: block;
+  width: 50%; /* Line width relative to the container */
+  height: 3px; /* Thickness of the line */
+  background-color: #007bff; /* Color of the line */
+  margin: 10px auto 0; /* Center the line and add spacing */
+}
+
+/* Styling for the paragraph or other content */
+.policy-section p {
+  font-size: 1rem; /* Adjust font size */
+  line-height: 1.6; /* Line height for readability */
+  color: #555; /* Lighter text color */
+  text-align: justify; /* Optional: Justify text alignment */
+}
+
+/* Terms and conditions*/
+
+.terms-section {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.terms-heading {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.terms-date {
+  text-align: right;
+  font-style: italic;
+}
+
+.terms-content h2 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  color: #333;
+}
+
+.terms-content p, .terms-content ul {
+  margin-bottom: 15px;
+}
+
+.terms-content ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+.terms-content address {
+  font-style: normal;
+  margin-top: 15px;
+  line-height: 1.4;
+}
