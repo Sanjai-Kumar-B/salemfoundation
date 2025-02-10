@@ -1,7 +1,5 @@
 
-body{
-    margin: 3px;
-}
+
 
 /* Fonts */
 :root {
@@ -143,7 +141,7 @@ body{
       width: 50px;
       height: 50px;
       bottom: 40px; /* Adjust for smaller screens */
-      right: 60px;
+      right: 30px;
   }
   
 }
@@ -284,6 +282,36 @@ body{
     color: var(--light);
 }
 
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Default height */
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(24, 29, 56, 0.7);
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .banner-container {
+      height: 80vh; /* Increased height for 4:5 aspect ratio */
+  }
+}
 
 /*** Section Title ***/
 .section-title {
@@ -292,27 +320,6 @@ body{
     text-transform: uppercase;
 }
 
-.section-title::before {
-    position: absolute;
-    content: "";
-    width: calc(100% + 80px);
-    height: 2px;
-    top: 4px;
-    left: -40px;
-    background: var(--primary);
-    z-index: -1;
-}
-
-.section-title::after {
-    position: absolute;
-    content: "";
-    width: calc(100% + 120px);
-    height: 2px;
-    bottom: 5px;
-    left: -60px;
-    background: var(--primary);
-    z-index: -1;
-}
 
 .section-title.text-start::before {
     width: calc(100% + 40px);
@@ -425,7 +432,7 @@ body{
     }
     
     .institutions-section .section-title {
-      font-size: 1.8rem;
+      
       font-weight: bold;
       margin-bottom: 20px;
       color: #181d38; /* Text color */
@@ -992,8 +999,8 @@ textarea.input {
   .call-float {
       width: 50px;
       height: 50px;
-      bottom: 150px; /* Adjust for smaller screens */
-      right: 70px;
+      bottom: 120px; /* Adjust for smaller screens */
+      right: 30px;
   }
 
   .call-float img {
@@ -1036,8 +1043,8 @@ textarea.input {
   .whatsapp-float {
       width: 50px;
       height: 50px;
-      bottom: 250px;
-      right: 70px;
+      bottom: 200px;
+      right: 30px;
   }
 
   .whatsapp-float img {
